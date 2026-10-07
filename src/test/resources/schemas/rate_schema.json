@@ -1,6 +1,6 @@
 {
-  "Schema": "http://json-schema.org/draft-07/schema#",
-  "tittle": "RateResponse",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RateResponse",
   "type": "object",
   "additionalProperties": false,
   "required": ["amount", "grow", "scale"],

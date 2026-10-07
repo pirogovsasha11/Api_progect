@@ -12,8 +12,7 @@ public class RateValidator {
     public void validateSchema(Response response, StatusCode statusCode) {
         response.then()
                 .statusCode(statusCode.getStatusCode())
-                .body(matchesJsonSchemaInClasspath("schemas/rate_schema.json"))
-                .extract().body().asString();
+                .body(matchesJsonSchemaInClasspath("schemas/rate_schema.json"));
     }
 
     public void validateHeaders(Response response) {
@@ -28,6 +27,5 @@ public class RateValidator {
                 .body("$", hasKey("scale"))
                 .body("$", hasKey("delta"))
                 .body("$", hasKey("amount"));
-
     }
 }

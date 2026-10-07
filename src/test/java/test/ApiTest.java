@@ -28,6 +28,5 @@ public class ApiTest {
         validator.validateSchema(response, StatusCode.OK);
         validator.validateHeaders(response);
         validator.validateHasKeys(response);
-
     }
 }
